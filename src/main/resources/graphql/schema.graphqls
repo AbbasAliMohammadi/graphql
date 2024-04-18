@@ -1,0 +1,14 @@
+type Query{
+    findAllStudent: [Student]
+}
+type Student{
+ id: ID,
+ name: String,
+ lastname: String
+ studentClass: StudentClass
+}
+
+type StudentClass{
+    id: ID,
+    name: String
+} 

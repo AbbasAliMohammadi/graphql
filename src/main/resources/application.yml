@@ -1,0 +1,21 @@
+spring:
+   application:
+       name: graphQL
+   datasource:
+        database-class-driver: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5432/graphql
+        username: postgres
+        password: 786@admin
+   jpa:
+     hibernate:
+        ddl-auto: update
+   devtools:
+      restart:
+         enabled: true
+      livereload:
+         enable: true
+   graphql:
+    graphiql:
+      enabled: true
+server:
+   port: 9090
